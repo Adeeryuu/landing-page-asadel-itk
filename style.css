@@ -1,0 +1,210 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'KellySlab';
+    line-height: 1.6;
+    color: #ff2929;
+    background: rgba(44, 62, 80, 0.9);
+}
+
+header {
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    background: #ff2929;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+header img {
+    max-width: 300px;
+}
+
+nav {
+    background: rgba(44, 62, 80, 0.9);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background: rgba(80, 108, 137, 0.9);
+}
+
+.showcase {
+    background: url('img/backdrop/wp.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+}
+
+.showcase h1 {
+    font-size: 4em;
+    margin: 0;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.container {
+    padding: 20px;
+}
+
+.section {
+    margin: 40px 0;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    text-align: center;
+    color: #fff;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.services, .products, .reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-box, .product-box, .review-box {
+    color: #ff2929;
+    background: rgba(32, 47, 62, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    flex: 1;
+    min-width: 250px;
+    max-width: 30%;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-box:hover, .product-box:hover, .review-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.product-box img {
+    max-width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.product-box img:hover {
+    transform: scale(1.05);
+}
+
+.product-box h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.btn {
+    background: rgba(50, 70, 89, 0.9);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background: rgba(80, 108, 137, 0.9);
+}
+
+#contact {
+    background-color: #fff;
+    padding: 40px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+#contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ff2929;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-form input, 
+#contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+#contact-form input:focus, 
+#contact-form textarea:focus {
+    border-color: #333;
+    outline: none;
+}
+
+#contact-form button {
+    align-self: center;
+    padding: 15px 30px;
+    background-color: #ff2929;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#contact-form button:hover {
+    background-color: #e12c2c;
+    transform: scale(1.05);
+}
+
+.footer {
+    background: rgba(44, 62, 80, 0.9);
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    margin-top: 40px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@font-face{
+    font-family: 'KellySlab';
+    src: url('font/Kelly_Slab/KellySlab-Regular.ttf');
+}
